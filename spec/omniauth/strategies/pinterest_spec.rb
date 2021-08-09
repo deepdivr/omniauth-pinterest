@@ -12,11 +12,11 @@ describe OmniAuth::Strategies::Pinterest do
     end
 
     it 'should have correct authorize url' do
-      subject.options.client_options.authorize_url.should eq('https://api.pinterest.com/oauth/')
+      subject.options.client_options.authorize_url.should eq('https://pinterest.com/oauth/')
     end
 
     it 'should have correct token url' do
-      subject.options.client_options.token_url.should eq('https://api.pinterest.com/v1/oauth/token')
+      subject.options.client_options.token_url.should eq('https://api.pinterest.com/v5/oauth/token')
     end
   end
 end
